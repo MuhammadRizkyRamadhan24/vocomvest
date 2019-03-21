@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Basic Header</title>
+
+	<link rel="stylesheet" href="assets/demo.css">
+	<link rel="stylesheet" href="assets/header-fixed.css">
+	<link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+
+</head>
+
+<body>
+	<header class="header-fixed">
+		<a href="#home" id="logo1"><img src="./assets/logo.png" id="logo"></a>
+		<a href="#menu" id="menu1"><img src="./assets/menu.png" id="menu"></a>
+		<a href="#like" id="like1"><img src="./assets/like.png" id="like"></a>
+		<a href="#cart" id="cart1"><img src="./assets/cart.png" id="cart"></a>
+		<a href="#masuk" id="masuk">MASUK</a>
+		<div class="container">
+      		<div class="search">
+      		   <input type="text" class="input">
+      		   <button type="submit" class="btn-search">
+      		     <i class="fa fa-search"></i>
+      		  </button>
+      		</div>
+    	</div>
+	</header>
+
+	<div class="header-fixed-placeholder"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var win = $(window),
+					body = $('body');
+			if(win.width() > 400){
+				win.on('scroll', function(e){
+					if(win.scrollTop()) {
+						body.addClass('fixed');
+					}
+					else {
+						body.removeClass('fixed');
+					}
+				});
+			}
+		});
+	</script>
+</body>
+
+</html>

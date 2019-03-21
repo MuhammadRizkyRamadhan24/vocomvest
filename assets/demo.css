@@ -1,0 +1,182 @@
+ /*header*/
+
+.header-fixed {
+	background-color:#fff;
+	padding: 20px 40px;
+	height: 80px;
+	color: #ffffff;
+	box-sizing: border-box;
+	top:-100px;
+
+}
+
+.header-fixed .header-limiter {
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+.header-fixed-placeholder{
+	height: 80px;
+	display: none;
+}
+
+
+body.fixed .header-fixed {
+	padding: 10px 40px;
+	height: 80px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+body.fixed .header-fixed-placeholder {
+	display: block;
+}
+
+#logo{
+	position: absolute;
+	width: 140px;
+	height: 40px;
+}
+
+#menu{
+	position: absolute;
+	width: 18px;
+	height: 13px;
+}
+#like{
+	position: absolute;
+	width: 28px;
+	height: 30px;
+}
+#cart{
+	position: absolute;
+	width: 27px;
+	height: 29px;
+}
+#masuk{
+	position: absolute;
+	width: 27px;
+	height: 9px;
+	top: 33.5px;
+	left: 1210px;
+	
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	text-decoration: none;
+	line-height: normal;
+	cursor: pointer;
+	
+	color: #1A99CF;
+}
+
+#logo1{
+	position: absolute;
+	top: 18px;
+	left: 99px;}
+
+#menu1{
+	position: absolute;
+	top: 36px;
+	left: 270px;
+}
+#like1{
+	position: absolute;
+	top: 27.5px;
+	left: 1110px;
+}
+#cart1{
+	position: absolute;
+	top: 27.5px;
+	left: 1160px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+.input {
+  float: left;
+  width: 740px;
+  height: 20px;
+  border: 1px solid #238ECB;
+  padding: 5px;
+  outline: none;
+  border-radius: 5px;
+  color: #808080;
+}
+.input:focus {
+  color: #808080;
+}
+.btn-search {
+  position: absolute;  
+  right: -38px;
+  width: 40px;
+  height: 32px;
+  border: 1px solid #238ECB;
+  background: #238ECB;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 0px 5px 5px 0px;
+}
+.container {
+  width: 740px;
+  height: 32px;
+  position: absolute;
+  top: 42px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #238ECB;
+  border-radius: 5px;
+}
+
+
+
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+
+	.header-fixed {
+		padding: 20px 0;
+		height: 85px;
+	}
+
+	.header-fixed .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-fixed .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-fixed .header-limiter nav a {
+		font-size: 13px;
+	}
+
+	body.fixed .header-fixed {
+		display: none;
+	}
+
+}
+
+/*
+	 We are clearing the body's margin and padding, so that the header fits properly.
+	 We are also adding a height to demonstrate the scrolling behavior. You can remove
+	 these styles.
+ */
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 1500px;
+}
